@@ -10,8 +10,47 @@ a {
   color: #00B7FF;
 }
 
+.header {
+  z-index: 2000;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  /*vertical-align: middle;*/
+  margin-top: 0;
+  margin-left: 0;
+  /*background-color: white;*/
+}
+
+.logo-container {
+  position: absolute;
+  margin-left: 0;
+  height: 100px;
+  width: 100px;
+}
+
+.logo-container img{
+  height: 100px;
+  width: 100px;
+}
+
+.nav-container {
+  margin-left: 700px;
+  margin-top: 20px;
+  /*margin-right: auto;*/
+}
+
+.nav-container ul li {
+  display: inline-block;
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
 .landing {
-  border: 2px solid gray;
   position: relative;
   /*background:  url('../images/fc_assets/dbx_blue-01.jpg');*/
   /*background-repeat: no-repeat;*/
@@ -22,7 +61,7 @@ a {
 .landing img {
   position: absolute;
   width: 100%;
-  opacity: .75;
+  opacity: 1;
   z-index: 1000;
 }
 
@@ -31,12 +70,13 @@ a {
   width: 100%;
   height: 200px;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 140px;
+  padding: 40px;
   text-align: center;
 }
 
 .landing .copy h1{
-  font-size: 64px;
+  font-size: 42px;
   color: white;
 }
 
@@ -60,22 +100,22 @@ a {
 .one-of-four {
   position: relative;
   background-color: gray;
-  /*background-color: white;*/
   overflow: hidden;
-  border: 2px solid gray;
   width: 100%;
   height: 500px;
 }
 
 .three-of-four-container {
-  width: 90%;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .three-of-four {
   display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
   /*background-color: white;*/
   /*border: 2px solid gray;*/
   margin-left: 1%;
@@ -84,8 +124,50 @@ a {
 
 }
 
-.three-of-four img{
-
-  height: 120px;
+.three-of-four-container  .three-of-four img{
+  position: absolute;
+  margin-top: 120px; 
+  height: 40px;
   width: auto;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
+
+
+.three-of-four-container .three-of-four .copy h2{
+  position: relative;
+  display: block;
+  margin: 0;
+  line-height: 1;
+
+}
+
+.three-of-four-container .three-of-four .copy p{
+  position: relative;
+  display: block;
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.three-of-four-container .three-of-four .copy {
+  text-align: center;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.one-of-four .copy h3 {
+  width: 200px;
+  padding: 10px;
+  margin-left: 480px;
+  /*border: 2px solid #FFC300;*/
+  background-color: #FFC300;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  /*color: white;*/
+  color: black;
+}
+
+
