@@ -1,0 +1,91 @@
+body {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+  font-family: "Avenir W02",sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.landing {
+  border: 2px solid gray;
+  position: relative;
+  /*background:  url('../images/fc_assets/dbx_blue-01.jpg');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  height: 780px;
+}
+
+.landing img {
+  position: absolute;
+  width: 100%;
+  opacity: .75;
+  z-index: 1000;
+}
+
+.landing .one-of-four .copy {
+  z-index: 2000;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.landing .copy h1{
+  font-size: 64px;
+  color: white;
+}
+
+.landing .copy p{
+  font-size: 26px;
+  color: white;
+}
+
+
+
+.section {
+  position: relative;
+  background-color: gray;
+  /*background:  url('../images/fc_assets/dbx_blue-01.jpg');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  height: 780px;  
+
+}
+
+.one-of-four {
+  position: relative;
+  background-color: gray;
+  /*background-color: white;*/
+  overflow: hidden;
+  border: 2px solid gray;
+  width: 100%;
+  height: 500px;
+}
+
+.three-of-four-container {
+  width: 90%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three-of-four {
+  display: inline-block;
+  /*background-color: white;*/
+  /*border: 2px solid gray;*/
+  margin-left: 1%;
+  width: 20%;
+  height: 200px;
+
+}
+
+.three-of-four img{
+
+  height: 120px;
+  width: auto;
+}
