@@ -10,6 +10,11 @@ var app = angular.module('tileyRoofing', ['ui.router', 'ngRoute', 'ui.bootstrap'
         templateUrl: "partials/estimate_form.html",
         // controller: "homeController"
       })
+      .state('/about', {
+        url: "/about",
+        templateUrl: "partials/about.html",
+        // controller: "homeController"
+      })
       .state('/', {
         url: "/",
         templateUrl: "partials/home.html",
