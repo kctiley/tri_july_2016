@@ -24,31 +24,31 @@ app.directive("scroll", function ($window) {
             console.log(Yoff)
             if(Yoff > 480){
               console.log("in")
-              angular.element("#insurance .col5").removeClass('op-0')
+              angular.element("#insurance .col5").removeClass('op-3')
             }
             else{
-              angular.element("#insurance .col5").addClass('op-0')
+              angular.element("#insurance .col5").addClass('op-3')
             }
 
-            if(Yoff > 1100){
-              console.log("in left")
-              angular.element("#insurance2 .left").removeClass('left-out')
-              angular.element("#insurance2 .left").addClass('left-in')
-              angular.element("#insurance2 .right").removeClass('right-out')
-              angular.element("#insurance2 .right").addClass('right-in')
-            }
-            else{
-              angular.element("#insurance2 .left").addClass('left-out')
-              angular.element("#insurance2 .left").removeClass('left-in')
-              angular.element("#insurance2 .right").addClass('right-out')
-              angular.element("#insurance2 .right").removeClass('right-in')
-            }
-
-            // var oFactorOut = (100/Yoff);
-            // scope.styleFadeOut = {'opacity': oFactorOut};
-            // // Fade in
-            // var oFactorIn = (Yoff/1200);
-            // scope.styleFadeIn = {'opacity': oFactorIn};
+            // if(Yoff > 480){
+            //   console.log("in left")
+            //   angular.element("#insurance2 .left").removeClass('left-out')
+            //   angular.element("#insurance2 .left").removeClass('op-0')
+            //   angular.element("#insurance2 .left").addClass('left-in')
+            //   angular.element("#insurance2 .left").addClass('op-10')
+            //   angular.element("#insurance2 .right").removeClass('right-out')
+            //   angular.element("#insurance2 .right").removeClass('op-0')
+            //   angular.element("#insurance2 .right").addClass('right-in')
+            // }
+            // else{
+            //   angular.element("#insurance2 .left").addClass('left-out')
+            //   angular.element("#insurance2 .left").addClass('op-0')
+            //   angular.element("#insurance2 .left").removeClass('left-in')
+            //   angular.element("#insurance2 .left").removeClass('op-10')
+            //   angular.element("#insurance2 .right").addClass('right-out')
+            //   angular.element("#insurance2 .right").addClass('op-0')
+            //   angular.element("#insurance2 .right").removeClass('right-in')
+            // }
 
             scope.$apply();
         });
